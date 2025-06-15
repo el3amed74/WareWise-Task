@@ -1,4 +1,4 @@
-# Snipe-IT Asset Management System
+# SAsset Management System
 
 ## Overview
  IT asset management system designed to help organizations track and manage their IT assets, licenses, accessories, and consumables. Built on the Laravel framework, it provides a comprehensive solution for IT asset lifecycle management, from procurement to retirement.
