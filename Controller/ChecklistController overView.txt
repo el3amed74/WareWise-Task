@@ -1,0 +1,17 @@
+### ChecklistController
+Located at `app/Http/Controllers/ChecklistController.php`
+
+#### Main Functions
+- CRUD operations for checklists
+	-Creat -Read -Update -Delete
+- Management of checklist properties
+- User permission handling
+
+### ChecklistQuestionController
+Located at `app/Http/Controllers/ChecklistQuestionController.php`
+
+#### Main Functions
+- CRUD operations for checklist questions
+	-Creat -Read -Update -Delete
+- Question management within checklists
+- User permission handling

@@ -1,0 +1,33 @@
+### Checklists Model
+Located at `app/Models/Checklists.php`
+
+#### Properties
+- `name` (string): The name of the checklist
+- `type` (string): The type of checklist
+- `created_by` (integer): ID of the user who created the checklist
+- `updated_by` (integer): ID of the user who last updated the checklist
+
+#### Relationships
+- `questions`: Has many `ChecklistQuestion` models
+- `creator`: Belongs to `User` model (created_by)
+- `updater`: Belongs to `User` model (updated_by)
+
+#### Features
+- Soft deletes support
+- Automatic deletion of associated questions when checklist is deleted
+
+### ChecklistQuestion Model
+Located at `app/Models/ChecklistQuestion.php`
+
+#### Properties
+- `checklist_id` (integer): ID of the parent checklist
+- `checklist_name` (string): Name of the parent checklist
+- `question` (string): The question text
+- `comment` (string): Optional comment for the question
+- `created_by` (integer): ID of the user who created the question
+- `updated_by` (integer): ID of the user who last updated the question
+
+#### Relationships
+- `checklist`: Belongs to `Checklists` model
+- `creator`: Belongs to `User` model (created_by)
+- `updater`: Belongs to `User` model (updated_by)

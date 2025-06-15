@@ -1,0 +1,12 @@
+### Checklist Routes
+Located in `routes/wep.php`
+
+Route::resource('checklists', ChecklistController::class);
+```
+
+### Checklist Question Routes
+Located in `routes/wep.php`
+
+Route::get('checklists/{checklist}/questions', [ChecklistQuestionController::class, 'index'])->name('checklists.questions.index');
+Route::get('checklists/{checklist}/questions/create', [ChecklistQuestionController::class, 'create'])->name('checklists.questions.create');
+Route::post('checklists/{checklist}/questions', [ChecklistQuestionController::class, 'store'])->name('checklists.questions.store');

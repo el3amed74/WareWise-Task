@@ -1,0 +1,16 @@
+### Checklist Views
+Located in `resources/views/checklists/`
+
+#### Available Views
+- `index.blade.php`: List of all checklists
+- `create.blade.php`: Form to create new checklist
+- `edit.blade.php`: Form to edit existing checklist
+- `show.blade.php`: Detailed view of a checklist
+
+### Checklist Question Views
+Located in `resources/views/checklist-questions/`
+
+#### Available Views
+- `index.blade.php`: List of questions for a checklist
+- `create.blade.php`: Form to create new question
+- `edit.blade.php`: Form to edit existing question

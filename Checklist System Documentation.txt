@@ -1,0 +1,33 @@
+## Overview
+The checklist system is a feature that allows users to create and manage checklists with associated questions. This documentation covers the models, controllers, and views that make up the checklist functionality.
+
+## Usage
+
+### Creating a Checklist
+1. Navigate to the checklists index page
+2. Click "Create Checklist"
+3. Fill in the required fields (name, type)
+4. Submit the form
+
+### Adding Questions to a Checklist
+1. Navigate to the checklist details page
+2. Click "Add Question"
+3. Fill in the question details
+4. Submit the form
+
+### Managing Questions
+- Questions can be edited or deleted from the checklist questions page
+- Questions maintain their relationship with the parent checklist
+- All changes are tracked with user information
+
+## Security
+- All operations require appropriate user permissions
+- User actions are tracked (created_by, updated_by)
+- Soft deletes are implemented for data recovery
+
+## Best Practices
+1. Always validate checklist data before saving
+2. Use appropriate error handling for failed operations
+3. Maintain proper user permissions
+4. Follow the established naming conventions
+5. Keep questions organized within their respective checklists
